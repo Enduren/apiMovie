@@ -73,14 +73,7 @@ function App() {
       console.log(`Error fetching movies:${error}`);
     }
   };
-  //  if(query && data.results.length > 0)
-  //     } catch (error) {
-  //       console.error(`Error fetching movies: ${error}`);
-  //       setErrorMessage('Error fetching movies. Please try again later.');
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   }
+
   useEffect(() => {
     fetchMovies(searchTerm);
   }, [debouncedSearchTerm]);
